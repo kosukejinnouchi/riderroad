@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  background:white;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  .header-top {
+    display: flex;
+    .logo {
+      padding-left: 30px;
+    }
+    .search-form {
+      width: 100%;
+      position: relative;
+      .search {
+        display: flex;
+        padding: 15px 0 0 0;
+        position: absolute;
+        width: 83%;
+        &__box{
+          display: flex;
+          width: 100%;
+          padding-left: 30px;
+          .search-form {
+            width: 80%;
+            height: 36px;
+            padding: 8px;
+            border-radius: 30px;
+          }
+          .search-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            padding-left: 8px;
+            background: white;
+            &__icon {
+              color: black;
+              text-decoration: none;
+              font-size: 20px;
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    height: 482px;
+    background-image: image-url("material/bike-image.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 200px 0 0 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    &__contents {
+      color: rgb(247, 242, 242);
+      text-shadow: 0 0 4px #808080;
+      .image-top {
+        font-size: 60px;
+      }
+      .image-bottom {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.contents {
+  margin-top: 600px;
+  width: 1000px;
+  height: 1000px;
+  .content-post {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+    .content-name {}
+    .content-text {}
+  }
+}

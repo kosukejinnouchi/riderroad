@@ -1,0 +1,23 @@
+.header
+  .header-top
+    .logo
+      = link_to root_path do
+        = image_tag("material/rider-road-logo.png", class: "rider-road__icon", size: "200x100")
+    .search-form
+      = form_with url: root_path, local: true, method: :get, class:"search" do |f|
+        .search__box
+          = f.text_field :keyword, placeholder: "キーワードで検索", class: "search-form"
+          %button{type: "submit", class:'search-btn'}
+            %i.fas.fa-search.search-btn__icon
+  .image-box
+    .image-box__contents
+      .image-top
+        自然の中を走ろう
+      .image-bottom
+        全国のおすすめツーリングスポット
+.contents
+  - @spots.each do |spot|
+    .content-post{:style => "background-image: url(#{spot.image});"}
+      %p.content-name= spot.name
+      %span.content-text
+        = spot.text
