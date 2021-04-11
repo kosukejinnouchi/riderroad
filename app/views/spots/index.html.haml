@@ -16,8 +16,52 @@
       .image-bottom
         全国のおすすめツーリングスポット
 .contents
-  - @spots.each do |spot|
-    .content-post{:style => "background-image: url(#{spot.image});"}
-      %p.content-name= spot.name
-      %span.content-text
-        = spot.text
+  .spot-introduction
+    .spot-phrase
+      夫婦岩に沈む絶景のサンセットスポット ♪
+    .spot-prefecture
+      福岡県
+  .spot-place
+    .spot-image 
+      =image_tag("spot-images/futamigaura-image.jpg", class: "", size: "800x400")
+    .spot-map 
+      %iframe{allowfullscreen: "", "aria-hidden" => "false", frameborder: "0", height: "400", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.7353756477983!2d130.19396721515335!3d33.638102746887924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541eedd369cea37%3A0xa08c3c6c2b106a45!2z5LqM6KaL44O25rWm6aeQ6LuK5aC0!5e0!3m2!1sja!2sjp!4v1618110056773!5m2!1sja!2sjp", 
+       style: "border:0;", tabindex: "0", width: "500"}
+  .spot-description
+    玄海国定公園内に位置する福岡県糸島市志摩桜井の海岸「二見ヶ浦（ふたみがうら）」。福岡黒田藩二代目藩主の忠之が創建した桜井神社の社地であり、神聖な場所とされます。三重県伊勢市にある二見浦が“朝日の二見浦”と呼ばれるのに対して、糸島のものは“夕日の二見ヶ浦”と呼ばれ、特に夕日の美しさが称えられています。
+  .spot-tag 
+    ＃福岡県糸島市   ＃夫婦岩   ＃日本の渚百選
+
+.contents
+  .spot-introduction
+    .spot-phrase
+      四季折々に咲き誇る花々が綺麗！
+    .spot-prefecture
+      茨城県
+  .spot-place
+    .spot-image 
+      =image_tag("spot-images/hitachikaihinkouen.jpg", class: "", size: "800x400")
+    .spot-map 
+      %iframe{allowfullscreen: "", "aria-hidden" => "false", frameborder: "0", height: "400", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.0228150985804!2d140.58793151521806!3d36.40864329734201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60218b1d845e4441%3A0x767e1dea03e6f0e1!2z5Zu95Za244Gy44Gf44Gh5rW35rWc5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1618114791400!5m2!1sja!2sjp", 
+       style: "border:0;", tabindex: "0", width: "500"}
+  .spot-description
+    花と緑に囲まれた国営ひたち海浜公園は、開園面積約215haの広い園内は7つのエリアに分かれており、自然の中で楽しめるレジャースポットや花畑があります。春にはスイセンやチューリップ、ネモフィラ。夏にはバラ、ジニア、ヒマワリ。秋にはコキアやコスモスと四季折々の草花が、訪れる人々の目を楽しませてくれます。また観覧車やジェットコースターなどのアトラクションもあり、家族でも楽しめます。
+  .spot-tag 
+    ＃国営ひたち海浜公園   ＃茨城県ひたちなか市   ＃ジェットコースター
+
+.contents
+  .spot-introduction
+    .spot-phrase
+      お土産も充実！東京湾に浮かぶパーキングエリア
+    .spot-prefecture
+      千葉県
+  .spot-place
+    .spot-image 
+      =image_tag("spot-images/umihotaru.jpg", class: "", size: "800x400")
+    .spot-map 
+      %iframe{allowfullscreen: "", "aria-hidden" => "false", frameborder: "0", height: "400", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4014.6383738703653!2d139.8721329115987!3d35.46425621594912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601871c81f4a5c0b%3A0x5ca8c5065c4722ce!2z5rW344G744Gf44KL77yw77yh!5e0!3m2!1sja!2sjp!4v1618115978755!5m2!1sja!2sjp", 
+       style: "border:0;", tabindex: "0", width: "500"}
+  .spot-description
+    東京湾を横断して、都心部と千葉県の房総半島とを結ぶ架け橋「東京湾アクアライン」。その中間に、まるで大きな船のように浮かぶのが「海ほたるパーキングエリア」です。開設当初からパーキングエリアとしての役割だけでなく、観光名所として訪れる人も多かった海ほたるが、2019年4月に大幅リニューアルしました。
+  .spot-tag 
+    ＃海ほたる   ＃千葉県木更津市   ＃日本夜景遺産 

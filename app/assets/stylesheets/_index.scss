@@ -48,34 +48,73 @@
     }
   }
   .image-box {
-    position: relative;
     height: 482px;
-    background-image: image-url("material/bike-image.jpg");
+    background-image: image-url("material/bike-jump-logo.jpg");
     background-size: cover;
     background-position: bottom;
-    padding: 200px 0 0 50px;
+    padding: 180px 0 0 50px;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
     &__contents {
       color: rgb(247, 242, 242);
       text-shadow: 0 0 4px #808080;
       .image-top {
         font-size: 60px;
+        padding-left: 890px;
       }
       .image-bottom {
-        font-size: 18px;
+        font-size: 22px;
+        padding-left: 900px;
+        margin-bottom: 400px;
       }
     }
   }
 }
 .contents {
   margin-top: 600px;
-  width: 1000px;
-  height: 1000px;
-  .content-post {
-    max-width: 100%;
-    height: auto;
-    object-fit: fill;
-    .content-name {}
-    .content-text {}
+  margin-left: 20px;
+  margin-bottom: -500px;
+  .spot-introduction {
+    display: flex;
+    border-bottom: dotted 2px #beb2b2;
+    align-items: center;
+    width: 1300px;
+    .spot-phrase {
+      font-weight: bold;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      font-size: 30px;
+      padding-bottom: 5px;
+    }
+    .spot-prefecture {
+      margin-left: 20px;
+      font-weight: bold;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      font-size: 20px;
+      background-color: rgb(233, 59, 59);
+      padding: 3px 7px;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  .spot-place {
+    display: flex;
+    .spot-image {
+      margin-top: 15px;
+    }
+    .spot-map {
+      margin-top: 15px;
+      margin-left: 20px;
+    }
+  }
+  .spot-description {
+    font-size: 20px;
+    color: rgb(85, 83, 83);
+    width: 1100px;
+    margin-top: 10px;
+    line-height: 35px;
+  }
+  .spot-tag {
+    color: rgb(24, 135, 240);
+    font-size: 20px;
+    margin-top: 15px;
   }
 }
